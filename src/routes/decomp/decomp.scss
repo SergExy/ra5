@@ -1,0 +1,105 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+
+  &-news {
+    display: flex;
+  }
+
+  &-search {
+    max-width: 1400px;
+    display: flex;
+  }
+}
+
+.newsList {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -24px;
+    width: 24px;
+    height: 24px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.currencyInfo {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.advertisement {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+
+  &__icon {
+    width: 150px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__comment {
+    font-style: italic;
+  }
+}
+
+.MainComponent {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.searchLogo {
+  width: 150px;
+  margin-right: 50px;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.searchNav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  &__item + &__item {
+    margin-left: 5px;
+  }
+}
+
+.widgets {
+  columns: 3;
+}
